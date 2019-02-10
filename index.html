@@ -1,98 +1,49 @@
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" media="screen">
-        <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $("#content").load('bio.html');
+        });
+        
+        function handle_navigation(page){
+            $("#content").load(page);
+        }
+    </script>
 </head>
 <body>
-	<div id="main" class="container-fluid" role="main">
-		<h1>Mainak Jas</h1>
-    		<div class="row">
-        		<div class="col-md-12">
-            		<img style='float:left; width:200px; margin-right:10px;' src="profile.JPG"/>
-            		<p> I now started a postdoc at the Martinos Center in Harvard Medical School with <a href="https://www.martinos.org/user/5923"> Matti Hamalainen. </a><br/>
-            		I finished my PhD with <a href="http://alexandre.gramfort.net/">Alexandre Gramfort</a> at Telecom ParisTech.<br/>
-            		I have also worked with <a href="https://filebox.ece.vt.edu/~parikh/">Devi Parikh</a> as an intern at Virginia Tech.<br/>
-
-            		<br/><b>Education</b></br>    
-            		BTech, Instrumentation Engineering from IIT Kharagpur (2012)<br/>
-            		MSc Tech, Machine Learning and Data Mining from Aalto University (2015)
-            		<a href="https://aaltodoc.aalto.fi/bitstream/handle/123456789/15550/master_Jas_Mainak_2015.pdf">[Masters thesis]</a><br/>
-            		PhD, Telecom ParisTech from Telecom ParisTech (2018)
-            		<a href="https://www.dropbox.com/s/2mgcmjdz0eackpn/main_FACILE_2018_08_23.pdf?dl=0">[PhD thesis]</a><br/><br/>
-            		<b>Research interests</b> Machine learning, Signal Processing, Optimization
-            		<br/>Profile on <a href="http://scholar.google.co.in/citations?user=YIi1T7IAAAAJ">Google Scholar</a>
-            		</p>
-        		</div>
-			</div>
-		<h3>Publications</h3>
-		<h4>Preprints</h4>
-		<b>Jas, M.</b>, Larson, E., Engemann, E., Leppakangas, J., Taulu, S., Hamalainen, M., and Gramfort, A.
-		<br/>MEG/EEG group study with MNE: recommendations, quality assessments and best practices.
-		<br/>bioarXiv, 240044. <a href="http://mne-tools.github.io/mne-biomag-group-demo/">[Code]</a>
-                <div class="altmetric-embed" data-badge-type="4" data-altmetric-id="31006691" style="display:inline-block"></div>
-		<br/><br/>
-		Galan, JGN., Gorgolewski, K.J., Bock E., Brooks, T.L., Flandin, G., 
-		Gramfort, A., Henson, R.N., <br/><b>Jas, M.</b>, Litvak, V., Moreau, J., Oostenveld, R.,
-		Jan-Mathijs Schoffelen, Tadel, F., Wexler, J., Baillet, S.
-		<br/>MEG-BIDS: an extension to the Brain Imaging Data Structure for magnetoencephalography.
-		<br/>bioRxiv, 172684.
-	        <h4>2017</h4>
-		<b>Jas, M.</b>, Dupr&eacute; La Tour, T., &Scedil;im&scedil;ekli, U., & Gramfort, A.
-		<br/>Learning the Morphology of Brain Signals Using Alpha-Stable Convolutional Sparse Coding.
-		<br/>In Advances in Neural Information Processing Systems (NIPS)<a href="http://alphacsc.github.io/">[Code]</a><br/>
-		
-		<br/><b>Jas, M.</b>, Engemann, D., Bekhti, Y., Raimondo, F., & Gramfort, A.
-		<br/>Autoreject: Automated artifact rejection for MEG and MEG data
-		<br/>Neuroimage. 159: 417-429. <a href="http://autoreject.github.io/">[Code]</a>
-		<div data-badge-type="4" data-arxiv-id="1612.08194" data-hide-no-mentions="true" class="altmetric-embed" style="display:inline-block"></div>
-
-		<h4>2016</h4>
-		<b>Jas, M.</b>, Engemann, D., Raimondo, F., Bekhti, Y., & Gramfort, A.
-		<br/>Automated rejection and repair of bad trials in MEG/EEG
-		<br/>6th International Workshop on Pattern Recognition in Neuroimaging (PRNI)<br/>
-
-		<br/>Bekhti, Y., Strohmeier, D., <b>Jas, M.</b>, Badeau, R., Gramfort, A.
-		<br/>M/EEG source localization with multi-scale time-frequency dictionaries
-		<br/>6th International Workshop on Pattern Recognition in Neuroimaging (PRNI)
-
-		<h4>2015</h4>
-		<b>Jas, M.</b>, & Parikh, D.
-		<br/>Image Specificity.
-		<br/>IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2015. (Oral presentation) <a href="http://techtalks.tv/talks/image-specificity/61595/">[Talk]</a>
-                <a href="http://jasmainak.github.io/specificity/"> [Project page]</a>
-		<br/>
-
-		<br/>Engemann, D, Raimondo, F., King, J.R., <b>Jas, M.</b>, Gramfort, A., Dehaene, S., Naccache, L., Sitt, J.
-		<br/>Automated measurement and prediction of consciousness in vegetative state and minimally conscious patients.
-		<br/>Workshop on Statistics, Machine Learning and Neuroscience at the International Conference on Machine Learning (ICML)</br>
-
-		<h4>2014</h4>
-		Nangini C., <b>Jas M.</b>, Fernandes HL and Muggah R.
-		<br/>Visualizing Armed Groups: The Democratic Republic of the Congo’s M23 in Focus.
-		<br/>Stability: International Journal of Security and Development. 3(1): 5, doi: 10.5334/sta.dd.<br/>
-
-		<h4>2013</h4>
-		Gramfort A., Luessi, M., Larson E., Engemann D., Strohmeier D., Brodbeck C., Goj R., <b>Jas M.</b>, Brooks T., Parkkonen L., & Hämäläinen M.
-		<br/>MEG and EEG analysis with MNE-Python.
-		<br/>Frontiers in Neuroscience. 7:267; doi: 10.3389/fnins.2013.00267.<br/>
-		
-		<br/>Ramkumar, P., <b>Jas, M.</b>, Pannasch, S., Hari R., & Parkkonen, L.
-		<br/>Feature-specific information processing precedes concerted activation in human visual cortex.
-		<br/>Journal of Neuroscience. 33(18): 7691-7699; doi: 10.1523/​JNEUROSCI.</br>
-				
-		<br/><b>Jas, M.</b>, Mukhopadhyay, S., Chakraborty J., Sadhu N. & Khandelwal N.
-		<br/>A Heuristic Approach to Automated Nipple Detection in Digital Mammograms.
-		<br/>Journal of Digital Imaging. 26(5): 932-940; doi: 10.1007/s10278-013-9575-x.<br/>
-
-		<h4>2012</h4>
-		<b>Jas, M.</b>, Chakraborty, J., & Mukhopadhyay, S.
-		<br/>An atlas based approach to segmenting MLO view mammograms.
-		<br/>International Conference on Informatics, Electronics & Vision (ICIEV), (pp. 7-11). IEEE; doi: 10.1109/ICIEV.2012.6317399.</br>
-
-		<h3>Software</h3>
-		I am a core contributor to <a href="http://martinos.org/mne/stable/index.html">MNE-Python</a>, a software package for MEG and EEG data analysis.<br/>
-		My principle contributions are to the real-time module and the mne-report.<br/>
-		I also contribute to <a href="https://github.com/glm-tools/pyglmnet/">PyGLMnet</a> in my free time.
-		<h3>Contact</h3> mjas [at] mgh [dot] harvard [dot] edu
-	</div>
+    <div id="main" class="container-fluid" role="main">
+        <h1>Mainak Jas</h1>
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" href="#"
+                    onclick="handle_navigation('bio.html');">Bio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"
+                   onclick="handle_navigation('publications.html');">Publications</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"
+                   onclick="handle_navigation('software.html');">Software</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"
+                   onclick="handle_navigation('contact.html');">Contact</a>
+            </li>
+        </ul>
+        <div class="row">
+            <div class="col-md-12">
+                <img style='float:left; width:200px; margin-right:10px;' src="profile.JPG"/>
+                </p>
+            </div>
+        </div>
+        <div id="content">
+        </div>
+    </div>
 </body>
