@@ -1,6 +1,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="styles.css" rel="stylesheet" media="screen">
     <script
       src="https://code.jquery.com/jquery-3.3.1.js"
       integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -10,8 +11,10 @@
             $("#content").load('bio.html');
         });
         
-        function handle_navigation(page){
+        function handle_navigation(element, page){
             $("#content").load(page);
+            $('.nav-link.active').removeClass('active');
+            element.classList.add('active');
         }
     </script>
 </head>
@@ -21,19 +24,19 @@
             <ul class="nav nav-tabs">
               <li class="nav-item">
                 <a class="nav-link active" href="#"
-                    onclick="handle_navigation('bio.html');">Bio</a>
+                    onclick="handle_navigation(this, 'bio.html');">Bio</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#"
-                   onclick="handle_navigation('publications.html');">Publications</a>
+                   onclick="handle_navigation(this, 'publications.html');">Publications</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#"
-                   onclick="handle_navigation('software.html');">Software</a>
+                   onclick="handle_navigation(this, 'software.html');">Software</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#"
-                   onclick="handle_navigation('contact.html');">Contact</a>
+                   onclick="handle_navigation(this, 'contact.html');">Contact</a>
             </li>
         </ul>
         <div class="row">
